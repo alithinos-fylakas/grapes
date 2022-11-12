@@ -2,7 +2,7 @@ def main():
     words = []
     with open("hino.txt", encoding = "utf-8") as file:
         for line in file:
-            words += line.split()
+            words += line.upper().split()
     
     print(words)
 
@@ -14,7 +14,7 @@ def main():
             break
         elif word.upper() in words:
             print(word)
-            print(word.count(word.upper()))
+            print(words.count(word.upper()))
         else:
             print(f"The word {word} was not found!")
 
