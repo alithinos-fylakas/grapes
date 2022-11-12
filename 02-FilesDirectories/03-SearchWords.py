@@ -2,7 +2,7 @@ def main():
     words = []
     with open("hino.txt", encoding = "utf-8") as file:
         for line in file:
-            words += line.split().upper()
+            words += line.split()
     
     print(words)
 
